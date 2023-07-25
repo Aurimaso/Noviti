@@ -1,0 +1,22 @@
+.button {
+    font-size: 200%;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    min-height: 65px;
+    min-width: 200px;
+    font-family: monospace;
+}
+
+.slogan {
+    font-family: monospace;
+    font-size: 200%;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+	align-items:center;
+    margin-top: 25%;
+}

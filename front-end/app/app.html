@@ -9,7 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    test
+    <form method="post" class="form">
+        <label for="loanAmount">Loan amount:</label><br />
+        <input type="number" id="loanAmount" name="loanAmount" min="5000" max="50000" value="5000"/><br />
+        <input type="submit" value="Calculate" class="addpostbtn" />
+      </form>
+      <div class="container">
+          <table id="myTable" class="table">
+            <thead>
+              <tr class="table-header">
+                <th class="header__item filter__link">No.</th>
+                <th class="header__item filter__link">Remaining credit amount</th>
+                <th class="header__item filter__link">Principal part</th>
+                <th class="header__item filter__link">Interest</th>
+                <th class="header__item filter__link">Total payment</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        
+          
+
     
 </body>
 </html>

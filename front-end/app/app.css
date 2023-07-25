@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+html {
+    --base-spacing-unit: 24px;
+    --half-spacing-unit: var(--base-spacing-unit) / 2;
+    --color-alpha: #1772FF;
+    --color-form-highlight: #EEEEEE; 
+  }
+
+
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+body {
+	padding: var(--base-spacing-unit);
+	font-family:'Source Sans Pro', sans-serif;
+	margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+.container {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:flex-start;
+	align-items:self-start;
+	min-height:100vh;
+}
+
+.form {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:flex-start;
+	align-items:self-start;
+	/* min-height:100vh; */
+}
+
+.table {
+	width:100%;
+	border:1px solid var(--color-form-highlight);
+	border-radius:6px;
+	border-collapse:separate;
+}
+
+td, th {
+    border-left:1px;
+    border-top:1px;
+}
+
+th {
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#1a1a1a;
+	padding:(var(--base-spacing-unit) * 1.5) 0;
+	border-radius:6px;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding:(var(--base-spacing-unit) * 1.5) 0;
+	
+	&:nth-of-type(odd) {
+		background:var(--base-spacing-unit);
+	}
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.header__item {
+	color: white;
+	text-transform: uppercase;
+	align-self: center;
+	
+}
+
+#loanAmount {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 6px;
+}
+
+/* .filter__link {
+	color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	padding-left:var(--base-spacing-unit);
+	padding-right:var(--base-spacing-unit);
+	
+	&::after {
+		content:'';
+		position:absolute;
+		right:-(var(--base-spacing-unit) * 1.5);
+		color:white;
+		font-size:var(--base-spacing-unit);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	&.desc::after {
+		content: '(desc)';
+	}
+
+	&.asc::after {
+		content: '(asc)';
+	}
+	
+} */
